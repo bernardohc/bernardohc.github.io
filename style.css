@@ -1,104 +1,76 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #eee;
-  }
-  
-  header {
-    padding: 1.5rem 0;
-    text-align: center;
-  }
-  
-  header .logo {
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-bottom: 0.25rem;
-  }
-  
-  header .nav-link {
-    color: #3b334e;
-    border-radius: 4px;
-    display: inline-block;
-    margin: 0.5rem 0.25rem;
-    padding: 0.625rem 1.125rem;
-    text-decoration: none;
-    transition: 0.2s;
-  }
-  
-  header .nav-link:hover {
-    background-color: #e2d7ff;
-  }
-  
-  h1 {
-    font-size: 1.5rem;
-    margin: 1rem 0 0.5rem;
-  }
-  
-  h2 {
-    font-size: 1.25rem;
-    margin: 1rem 0 0.5rem;
-  }
-  
-  p {
-    line-height: 1.5;
-  }
-  
-  a {
-    color: #3b334e;
-    text-decoration: none;
-  }
-  
-  ul li {
-    margin-bottom: 0.5rem;
-    margin-left: 2.5rem;
-  }
-  
-  .container {
-    min-height: calc(100vh - 252px);
-    max-width: 800px;
-    margin: 0 auto 2rem;
-    padding: 2rem;
-    background-color: #fff;
-    box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-  }
-  
-  section {
-    margin-bottom: 1rem;
-  }
-  
-  .call-to-action {
-    background-color: #3b334e;
-    border: 0;
-    border-radius: 4px;
-    color: #fff;
-    cursor: pointer;
-    display: inline-block;
-    margin: 0.5rem 0.25rem;
-    padding: 0.625rem 1.125rem;
-    text-decoration: none;
-    transition: 0.2s;
-  }
-  
-  .call-to-action:hover {
-    background-color: #4e4368;
-  }
-  
-  .skills {
-    margin-top: 1.5rem;
-  }
-  
-  footer {
-    text-align: center;
-    padding: 1.5rem 0;
-    background-color: #3b334e;
-    color: #fff;
-  }
-  
+:root {
+      --bg-main: #f9fafb;
+      --bg-card: #ffffff;
+      --text-primary: #1f2021;
+      --text-secondary: #333333;
+      --highlight: #6ca4ff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-secondary);
+      line-height: 1.6;
+      padding: 1rem;
+    }
+
+    .container {
+      max-width: 960px;
+      background-color: var(--bg-card);
+      margin: auto;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    }
+
+    h1 {
+      font-size: 2.2rem;
+      color: var(--text-primary);
+      margin-bottom: 0.5rem;
+      border-bottom: 2px solid var(--highlight);
+      padding-bottom: 0.3rem;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      color: var(--highlight);
+      margin-top: 2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    a {
+      color: var(--highlight);
+      text-decoration: none;
+    }
+
+    ul {
+      padding-left: 1.2rem;
+    }
+
+    .info {
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+    }
+
+    .section {
+      margin-bottom: 1.5rem;
+    }
+
+    .keywords {
+      background-color: #eef3ff;
+      padding: 1rem;
+      border-left: 5px solid var(--highlight);
+      border-radius: 8px;
+      font-size: 0.95rem;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 1rem;
+      }
+    }
